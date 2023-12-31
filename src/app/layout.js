@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/thinking.png" type="image/png" sizes="36" />
       </head>
       <body className={inter.className}>
-        <div className="flex flex-col justify-between min-h-screen px-[50px] w-[1536px] mr-auto">
+        <div className="container">
           <Navbar />
           {children}
           <Footer />
