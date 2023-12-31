@@ -13,10 +13,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/thinking.png" type="image/png" sizes="36" />
+      </head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="flex flex-col justify-between min-h-screen px-[50px] w-[1536px] mr-auto">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
