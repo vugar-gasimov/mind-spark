@@ -41,7 +41,7 @@ const Links = () => {
         )}
       </div>
       <button
-        className="styles.menuBtn"
+        className={styles.menuBtn}
         onClick={() => setOpen((prev) => !prev)}
       >
         Menu

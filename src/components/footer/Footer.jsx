@@ -1,4 +1,12 @@
+import styles from "./footer.module.css";
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <div className={styles.container}>
+      <div className={styles.logo}>Mind Spark</div>
+      <div className={styles.text}>
+        Mind Spark creative thoughts agency &copy; All rights reserved.
+      </div>
+    </div>
+  );
 };
 export default Footer;
