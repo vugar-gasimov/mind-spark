@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./postCard.module.css";
 import Link from "next/link";
 
-const PostCard = () => {
+const PostCard = ({ post }) => {
   return (
     <div className={styles.container}>
       <div className={styles.top}>
@@ -17,14 +17,15 @@ const PostCard = () => {
         <span className={styles.date}>01.01.2024</span>
       </div>
       <div className={styles.bottom}>
-        <h2 className={styles.title}>Title</h2>
+        <h2 className={styles.title}>{post.title}</h2>
         <p className={styles.desc}>
-          In a chic and inviting space, the café boasts an elegant black and
+          {post.body}
+          {/* In a chic and inviting space, the café boasts an elegant black and
           white theme. The polished bar counter stands as the centerpiece,
           adorned with gleaming coffee cups and a modern coffee machine.
           Reflective mirrors tastefully complement the ambiance, while
           meticulously arranged plates add a touch of sophistication to this
-          charming setting.
+          charming setting. */}
         </p>
         <Link className={styles.link} href="/blog/post">
           Read more

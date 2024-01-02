@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import styles from "./about.module.css";
 
@@ -14,18 +15,18 @@ const AboutPage = () => {
           of web and software development services.
         </p>
         <div className={styles.boxes}>
-          <dic className={styles.box}>
+          <div className={styles.box}>
             <h2>1 K+</h2>
             <p>Year of experience.</p>
-          </dic>
-          <dic className={styles.box}>
+          </div>
+          <div className={styles.box}>
             <h2>60 K+</h2>
             <p>People reached</p>
-          </dic>
-          <dic className={styles.box}>
+          </div>
+          <div className={styles.box}>
             <h2>85 K+</h2>
             <p>Services and Plugins</p>
-          </dic>
+          </div>
         </div>
       </div>
 
