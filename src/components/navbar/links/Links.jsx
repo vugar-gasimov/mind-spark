@@ -1,5 +1,6 @@
 "use client";
 
+import { RiMenu3Line } from "react-icons/ri";
 import { useState } from "react";
 import styles from "./links.module.css";
 import NavLink from "./navLink/navLink";
@@ -40,12 +41,11 @@ const Links = () => {
           <NavLink item={{ title: "Login", path: "/login" }} />
         )}
       </div>
-      <button
+      <RiMenu3Line
+        size={36}
         className={styles.menuBtn}
         onClick={() => setOpen((prev) => !prev)}
-      >
-        Menu
-      </button>
+      />
       {open && (
         <div className={styles.mobileLinks}>
           {links.map((link) => (

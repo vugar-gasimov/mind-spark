@@ -2,7 +2,7 @@ import styles from "./footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>Mind Spark</div>
+      <div className={styles.logo}>MindSpark</div>
       <div className={styles.text}>
         Mind Spark creative thoughts agency &copy; All rights reserved.
       </div>

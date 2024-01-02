@@ -47,3 +47,14 @@
 .box h2 {
   color: var(--btn);
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .boxes {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
