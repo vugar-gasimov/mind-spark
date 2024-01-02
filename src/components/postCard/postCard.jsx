@@ -8,12 +8,13 @@ const PostCard = ({ post }) => {
       <div className={styles.top}>
         <div className={styles.imgContainer}>
           <Image
-            src="https://images.pexels.com/photos/13926757/pexels-photo-13926757.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            src={post.img ? post.img : "/noimage.jpeg"}
             alt=""
             fill
             className={styles.img}
           />
         </div>
+
         <span className={styles.date}>01.01.2024</span>
       </div>
       <div className={styles.bottom}>
@@ -27,7 +28,7 @@ const PostCard = ({ post }) => {
           meticulously arranged plates add a touch of sophistication to this
           charming setting. */}
         </p>
-        <Link className={styles.link} href="/blog/post">
+        <Link className={styles.link} href={`/blog/${post.slug}`}>
           Read more
         </Link>
       </div>
