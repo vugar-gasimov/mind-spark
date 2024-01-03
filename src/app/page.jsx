@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./home.module.css";
+import Loader from "./loader";
 
 const Home = () => {
   return (

@@ -19,15 +19,7 @@ const PostCard = ({ post }) => {
       </div>
       <div className={styles.bottom}>
         <h2 className={styles.title}>{post.title}</h2>
-        <p className={styles.desc}>
-          {post.body}
-          {/* In a chic and inviting space, the café boasts an elegant black and
-          white theme. The polished bar counter stands as the centerpiece,
-          adorned with gleaming coffee cups and a modern coffee machine.
-          Reflective mirrors tastefully complement the ambiance, while
-          meticulously arranged plates add a touch of sophistication to this
-          charming setting. */}
-        </p>
+        <p className={styles.desc}>{post.body}</p>
         <Link className={styles.link} href={`/blog/${post.slug}`}>
           Read more
         </Link>
