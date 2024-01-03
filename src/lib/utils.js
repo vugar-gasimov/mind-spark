@@ -13,3 +13,4 @@ export const connectToDb = async () => {
     throw new Error("Error connecting", error);
   }
 };
+mongoose.set("strictQuery", false);
