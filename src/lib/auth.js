@@ -20,8 +20,8 @@ export const {
       if (account.provider === "github") {
         connectToDb();
         try {
-          const user = await User.findOne({ email: profile.email });
-          if (!user) {
+          const foundUser = await User.findOne({ email: profile.email });
+          if (!foundUser) {
             const newUser = new User({
               username: profile.login,
               email: profile.email,
