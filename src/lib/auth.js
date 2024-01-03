@@ -8,7 +8,7 @@ import bcrypt from "bcryptjs";
 const login = async (credentials) => {
   try {
     connectToDb();
-    const user = await User.findOne({ username: credentials.username });
+    const user = await User.findOne({ email: credentials.email });
     if (!user) {
       throw new Error("Wrong credentials");
     }
