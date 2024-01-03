@@ -94,9 +94,9 @@ export const register = async (previousState, formData) => {
   }
   try {
     connectToDb();
-    const user = await User.findOne({ username });
+    const user = await User.findOne({ email });
     if (user) {
-      return { error: "Username already exists" };
+      return { error: "Email already exists" };
     }
     const salt = await bcrypt.genSalt(10);
     const hashedPassword = await bcrypt.hash(password, salt);
