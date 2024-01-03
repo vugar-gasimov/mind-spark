@@ -1,0 +1,27 @@
+.img {
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.post {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.deleteBtn {
+  padding: 8px 16px;
+  background-color: var(--btn);
+  color: var(--textColor);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

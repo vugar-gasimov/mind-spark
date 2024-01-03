@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MindSpark Creative Thoughts Agency
 
-## Getting Started
+![MindSpark Logo](logo.png)
 
-First, run the development server:
+MindSpark is a creative agency offering web development services. Here's a guide to the features available on our website:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Homepage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Overview of our agency's services.
+- Access to the About, Contact, Blog, Admin, and Logout sections.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### About
 
-## Learn More
+- Description of our agency's mission and values.
+- Information about our experience, audience reach, and services provided.
+- Background image reflecting our agency's essence.
 
-To learn more about Next.js, take a look at the following resources:
+### Contact
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Contact form allowing users to reach out with their queries.
+- Fields to input Name, Email, Phone Number (optional), and Message.
+- Ability to send messages directly through the form.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Blog
 
-## Deploy on Vercel
+- Accessible only after logging in.
+- Displays posts with their respective dates.
+- "Read more" links to view full blog posts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Admin
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Accessible to authorized admin users only.
+- Lists admin posts like "Hello World," "Hello Teacher," "Test Form Panes."
+- Delete option available for admin posts.
+- Ability to add new posts with title, slug, image, and description.
+- Manage admin users by adding or deleting users with username, email, password, and image options.
+- Admin privileges can be assigned with the "Is admin?" checkbox.
+
+### Login/Logout
+
+- Login option provided with Github authentication.
+- Users can log in using their email and password.
+- Option to register if not already registered.
+
+---
+
+## Purpose
+
+Our website is designed to provide a seamless experience for users interested in our agency's services, blog posts, and admin functionalities. By offering login access and admin privileges, we aim to deliver a secure and personalized experience for users and administrators.
+
+© 2024 Mind Spark Creative Thoughts Agency. All rights reserved.

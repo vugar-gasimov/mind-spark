@@ -7,14 +7,14 @@ const PostUser = async ({ userId }) => {
     <div className={styles.container}>
       <Image
         src={user.img ? user.img : "/noavatar.png"}
-        alt=""
+        alt={user.username}
         width={50}
         height={50}
         className={styles.avatar}
       />
       <div className={styles.texts}>
         <span className={styles.title}>Author</span>
-        <span className={styles.username}>Terry Jeferson</span>
+        <span className={styles.username}>{user.username}</span>
       </div>
     </div>
   );
